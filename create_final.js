@@ -12,7 +12,7 @@ fs.promises.readdir("./output").then((files) => {
         const adjustedArr = arr.map((player) => ({
           playerName: player.playerName,
           playerId: player.playerId,
-          playerImage: player.playerImage,
+          playerImg: player.playerImg,
           history: player.history.map((history) => ({
             teamId: `${history.teamId}-${history.season}`,
             teamName: history.teamName,
